@@ -37,3 +37,19 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Azure Login
+        run: az login --service-principal --username a93600f3-097d-4ebb-8082-665fa66db04b --password 69770a26-35fe-4253-954e-37877b519604 --tenant d2df5f64-8ce5-4843-9bc0-3f6a81cb7fc1
+
+      - name: Terraform init
+        run: terraform init
+
+      - name: Terraform fmt
+        run: terraform fmt
+
+      - name: Terraform plan
+        run: terraform plan
+
+      - name: Terraform apply
+        run: terraform apply -auto-approve
+        
