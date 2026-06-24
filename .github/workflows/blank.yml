@@ -39,7 +39,7 @@ jobs:
           echo test, and deploy your project.
 
       - name: Azure Login
-        run: az login --service-principal --username a93600f3-097d-4ebb-8082-665fa66db04b --password 69770a26-35fe-4253-954e-37877b519604 --tenant d2df5f64-8ce5-4843-9bc0-3f6a81cb7fc1
+        run: az login --service-principal --username a93600f3-097d-4ebb-8082-665fa66db04b --password dYB8Q~loPgAi7CdOQ56S~k35LdVdGgTc1OuSscBS --tenant d2df5f64-8ce5-4843-9bc0-3f6a81cb7fc1
 
       - name: Terraform init
         run: terraform init
